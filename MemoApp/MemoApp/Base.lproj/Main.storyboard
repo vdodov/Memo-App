@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TpB-Cz-Q2s">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="memoCell" textLabel="ZuR-Cm-kvg" style="IBUITableViewCellStyleDefault" id="vlR-0V-c4V">
@@ -115,8 +115,8 @@
                                     <outlet property="dataSource" destination="6rW-aF-Nfi" id="05R-X8-nBe"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVf-Le-bJQ">
-                                <rect key="frame" x="0.0" y="847" width="414" height="49"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVf-Le-bJQ">
+                                <rect key="frame" x="0.0" y="833" width="414" height="49"/>
                                 <items>
                                     <barButtonItem systemItem="trash" id="Lcb-ce-XDF">
                                         <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,13 +130,19 @@
                                             <segue destination="sQL-h1-oOr" kind="presentation" id="9jJ-Jb-Mw5"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Pfy-x2-eAT"/>
+                                    <barButtonItem systemItem="action" id="mgK-q7-nuN">
+                                        <connections>
+                                            <action selector="share:" destination="6rW-aF-Nfi" id="rJ6-qz-TFA"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bu9-Ob-7h1" firstAttribute="bottom" secondItem="QVf-Le-bJQ" secondAttribute="bottom" id="5yK-ah-cP3"/>
                             <constraint firstItem="QVf-Le-bJQ" firstAttribute="leading" secondItem="bu9-Ob-7h1" secondAttribute="leading" id="Dkv-pQ-MBc"/>
-                            <constraint firstAttribute="bottom" secondItem="QVf-Le-bJQ" secondAttribute="bottom" id="Ho7-vc-gEy"/>
                             <constraint firstItem="TpB-Cz-Q2s" firstAttribute="top" secondItem="Khj-Yy-mio" secondAttribute="top" id="Vtb-Ax-4cO"/>
                             <constraint firstItem="QVf-Le-bJQ" firstAttribute="top" secondItem="TpB-Cz-Q2s" secondAttribute="bottom" id="Xrg-2q-KDW"/>
                             <constraint firstItem="TpB-Cz-Q2s" firstAttribute="leading" secondItem="bu9-Ob-7h1" secondAttribute="leading" id="aax-md-1cn"/>
@@ -235,6 +241,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gae-us-UNB"/>
+        <segue reference="9jJ-Jb-Mw5"/>
     </inferredMetricsTieBreakers>
 </document>

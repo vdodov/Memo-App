@@ -16,6 +16,7 @@
 		E61ED41D232246BF000F7F4D /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61ED41C232246BF000F7F4D /* MemoListTableViewController.swift */; };
 		E61ED41F2323CA29000F7F4D /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61ED41E2323CA29000F7F4D /* ComposeViewController.swift */; };
 		E61ED4212325344F000F7F4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61ED4202325344F000F7F4D /* DetailViewController.swift */; };
+		E61ED42323253E39000F7F4D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61ED42223253E39000F7F4D /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E61ED41C232246BF000F7F4D /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		E61ED41E2323CA29000F7F4D /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		E61ED4202325344F000F7F4D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E61ED42223253E39000F7F4D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E61ED40B23223F33000F7F4D /* MemoApp.xcdatamodeld */,
 				E61ED41C232246BF000F7F4D /* MemoListTableViewController.swift */,
 				E61ED4202325344F000F7F4D /* DetailViewController.swift */,
+				E61ED42223253E39000F7F4D /* DataManager.swift */,
 			);
 			path = MemoApp;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				E61ED41F2323CA29000F7F4D /* ComposeViewController.swift in Sources */,
 				E61ED41B23224591000F7F4D /* Model.swift in Sources */,
 				E61ED40D23223F33000F7F4D /* MemoApp.xcdatamodeld in Sources */,
+				E61ED42323253E39000F7F4D /* DataManager.swift in Sources */,
 				E61ED4212325344F000F7F4D /* DetailViewController.swift in Sources */,
 				E61ED40523223F33000F7F4D /* AppDelegate.swift in Sources */,
 				E61ED41D232246BF000F7F4D /* MemoListTableViewController.swift in Sources */,

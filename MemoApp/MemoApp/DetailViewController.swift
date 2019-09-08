@@ -9,6 +9,17 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+  
+  let formatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .long
+    formatter.timeStyle = .medium
+    formatter.locale = Locale(identifier: "Ko_kr")
+    return formatter
+  }()
+  
+  
+  var memo: Memo?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +50,15 @@ extension DetailViewController: UITableViewDataSource {
     switch indexPath.row {
     case 0:
       let cell = tableView.dequeueReusableCell(withIdentifier: "memoCell", for: indexPath)
+      
+      cell.textLabel?.text = memo?.content
+      
       return cell
     case 1:
       let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
+      
+      cell.textLabel?.text = formatter.string(for: memo?.insertDate)
+      
       return cell
     default:
       fatalError()

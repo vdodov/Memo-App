@@ -25,4 +25,6 @@
 
 ✅ **완성화면**
 
-![RPReplay_Final1568013773](/Users/chasuyeon/Downloads/RPReplay_Final1568013773.gif)
+![play](./image/play.gif)
+
+

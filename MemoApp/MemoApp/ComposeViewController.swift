@@ -47,7 +47,13 @@ class ComposeViewController: UIViewController {
     
     dismiss(animated: true, completion: nil)
   }
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.memoTextView.endEditing(true)
+    print("Hi")
+    
+  }
   
+
   
 
     override func viewDidLoad() {
